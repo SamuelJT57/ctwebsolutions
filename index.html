@@ -4,128 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Website</title>
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+</head>
+<body>
 
-        body {
-            color: #333;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-        }
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">MyBrand</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-        /* Navigation Bar */
-        header {
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Make a Bold Impression</h1>
+            <p>Welcome to your new website homepage. Clean, modern, responsive, and ready for your unique content.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
 
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Responsive Design</h3>
+                <p>Looks great on desktops, tablets, and smartphones right out of the box.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Clean Code</h3>
+                <p>Easy to understand, modify, and expand with your own custom features.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Modern Style</h3>
+                <p>Designed with a sleek layout, elegant typography, and smooth transitions.</p>
+            </div>
+        </div>
+    </section>
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2c3e50;
-            text-decoration: none;
-        }
+    <footer>
+        <p>&copy; 2026 MyBrand. All rights reserved.</p>
+    </footer>
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #555;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #3498db;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #3498db, #2c3e50);
-            color: #fff;
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #e74c3c;
-            color: #fff;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #c0392b;
-        }
-
-        /* Features Section */
-        .features {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .feature-card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-card h3 {
-            margin: 15px 0;
-            color: #2c3e50;
+</body>
+</html>
