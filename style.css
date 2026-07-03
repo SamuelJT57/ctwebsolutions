@@ -1,4 +1,3 @@
-   <style>
         /* Reset and Base Styles */
         * {
             margin: 0;
@@ -134,14 +133,418 @@
             margin-top: 80px;
         }
 
+        /* Services Page */
+        .services-hero {
+            padding: 120px 20px;
+        }
+
+        .services-hero h1 {
+            font-size: 52px;
+        }
+
+        .services-intro {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .intro-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .intro-container h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .intro-container p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .benefits h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card h3 {
+            color: #2c3e50;
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        .benefit-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* Service Packages Section */
+        .service-packages {
+            max-width: 1300px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .service-packages h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #888;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .package-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+
+        .package-card.featured {
+            border: 3px solid #3498db;
+            transform: scale(1.02);
+        }
+
+        .package-card.featured:hover {
+            transform: scale(1.02) translateY(-5px);
+        }
+
+        .package-header {
+            padding: 30px 20px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+        .starter-header {
+            background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+        }
+
+        .professional-header {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+        }
+
+        .enterprise-header {
+            background: linear-gradient(135deg, #2c3e50, #1a252f);
+        }
+
+        .package-header h3 {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .package-price {
+            font-size: 14px;
+            opacity: 0.9;
+            margin: 10px 0;
+        }
+
+        .popular-badge {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .package-features {
+            list-style: none;
+            padding: 30px 20px;
+            flex-grow: 1;
+        }
+
+        .package-features li {
+            padding: 10px 0;
+            color: #555;
+            border-bottom: 1px solid #eee;
+        }
+
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+
+        .btn-package {
+            margin: 20px;
+            display: block;
+            text-align: center;
+            background-color: #e74c3c;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-us {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .why-choose-us h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .reason {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid #3498db;
+        }
+
+        .reason h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .reason p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            margin: 80px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn-large {
+            padding: 16px 40px;
+            font-size: 16px;
+            background-color: #e74c3c;
+        }
+
+        .btn-large:hover {
+            background-color: #c0392b;
+        }
+
+        /* Form Styling for Contact Page */
+        main {
+            min-height: 60vh;
+        }
+
+        .about-section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .about-section h2 {
+            color: #2c3e50;
+            font-size: 32px;
+            margin: 30px 0 20px 0;
+        }
+
+        .about-section h3 {
+            color: #2c3e50;
+            font-size: 22px;
+            margin: 25px 0 15px 0;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .about-section ul {
+            margin: 20px 0 20px 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .about-section li {
+            margin: 10px 0;
+            list-style-type: disc;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 0 20px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .contact-container h2 {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contact-container p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+        }
+
+        .contact-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-container button:hover {
+            background-color: #c0392b;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 32px;
             }
+            .services-hero h1 {
+                font-size: 36px;
+            }
             .nav-container {
                 flex-direction: column;
                 gap: 15px;
             }
+            .intro-container {
+                padding: 30px 20px;
+            }
+            .package-card.featured {
+                transform: scale(1);
+            }
+            .package-card.featured:hover {
+                transform: translateY(-5px);
+            }
+            .cta-section {
+                padding: 50px 20px;
+            }
+            .cta-section h2 {
+                font-size: 28px;
+            }
         }
-    </style>
