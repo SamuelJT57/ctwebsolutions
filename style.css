@@ -21,13 +21,21 @@
             z-index: 100;
         }
 
+        header.dark-mode {
+            background-color: #333;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
         .nav-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 8px;
         }
 
         .logo {
@@ -41,6 +49,9 @@
             list-style: none;
             display: flex;
             gap: 20px;
+            background-image: linear-gradient(135deg, #a7c4d7, #b1f1b7);
+            border-radius: 8px;
+            padding: 10px 20px;
         }
 
         .nav-links a {
@@ -51,12 +62,12 @@
         }
 
         .nav-links a:hover {
-            color: #3498db;
+            color: #ff8b07;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #3498db, #2c3e50);
+            background: linear-gradient(135deg, #3498db, #33ff47);
             color: #fff;
             padding: 100px 20px;
             text-align: center;
@@ -80,8 +91,21 @@
 
         .btn {
             display: inline-block;
-            background-color: #e74c3c;
+            background-color: #e78c3c;
             color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn.dark-mode {
+            display: inline-block;
+            background-color: #e78c3c;
+            color: #2b2b2b;
             padding: 12px 30px;
             text-decoration: none;
             border-radius: 5px;
@@ -90,7 +114,7 @@
         }
 
         .btn:hover {
-            background-color: #c0392b;
+            background-color: #ca6a0a;
         }
 
         /* Features Section */
@@ -277,71 +301,6 @@
             position: relative;
         }
 
-        .starter-header {
-            background: linear-gradient(135deg, #95a5a6, #7f8c8d);
-        }
-
-        .professional-header {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-        }
-
-        .enterprise-header {
-            background: linear-gradient(135deg, #2c3e50, #1a252f);
-        }
-
-        .package-header h3 {
-            font-size: 28px;
-            margin: 10px 0;
-        }
-
-        .package-price {
-            font-size: 14px;
-            opacity: 0.9;
-            margin: 10px 0;
-        }
-
-        .popular-badge {
-            display: inline-block;
-            background-color: #e74c3c;
-            color: #fff;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .package-features {
-            list-style: none;
-            padding: 30px 20px;
-            flex-grow: 1;
-        }
-
-        .package-features li {
-            padding: 10px 0;
-            color: #555;
-            border-bottom: 1px solid #eee;
-        }
-
-        .package-features li:last-child {
-            border-bottom: none;
-        }
-
-        .btn-package {
-            margin: 20px;
-            display: block;
-            text-align: center;
-            background-color: #e74c3c;
-        }
-
-        .btn-primary {
-            background-color: #3498db;
-        }
-
-        .btn-primary:hover {
-            background-color: #2980b9;
-        }
-
         /* Why Choose Us Section */
         .why-choose-us {
             max-width: 1200px;
@@ -404,11 +363,11 @@
         .btn-large {
             padding: 16px 40px;
             font-size: 16px;
-            background-color: #e74c3c;
+            background-color: #e78c3c;
         }
 
         .btn-large:hover {
-            background-color: #c0392b;
+            background-color: #e78c3c;
         }
 
         /* Form Styling for Contact Page */
@@ -506,7 +465,7 @@
         .contact-container button {
             width: 100%;
             padding: 12px;
-            background-color: #e74c3c;
+            background-color: #ff7e39;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -517,7 +476,7 @@
         }
 
         .contact-container button:hover {
-            background-color: #c0392b;
+            background-color: #ff823e;
         }
 
         /* Responsive Design */
@@ -548,3 +507,218 @@
                 font-size: 28px;
             }
         }
+
+img.about-image {
+    float: left;
+    margin-right: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 9px;
+    border: 2.5px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, rgb(0, 255, 106), rgb(0, 51, 255)) border-box;
+}
+
+.sam {
+    border-radius: 9px;
+    border: 2.5px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, rgb(0, 255, 106), rgb(0, 51, 255)) border-box;
+    padding: 8px;
+}
+
+.caeden {
+    border-radius: 9px;
+    border: 2.5px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, rgb(0, 255, 106), rgb(0, 51, 255)) border-box;
+    padding: 8px;
+}
+
+a {
+    color: #ffa600;
+    text-decoration: none;
+}
+
+/* Smooth transitions */
+body,
+nav,
+header,
+section,
+footer,
+button,
+.card {
+    transition: background-color 0.4s ease,
+                color 0.4s ease,
+                border-color 0.4s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+body.dark-mode button {
+    background-color: #2d8cff;
+}
+
+a.active {
+    color: #000000;
+}
+
+.contactUs {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 30px;
+}
+
+.announcement-banner {
+    background: #323232;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.announcement-text {
+    display: inline-block;
+    animation: scroll-banner 36s linear infinite;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@keyframes scroll-banner {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.announcement-text:hover {
+    animation-play-state: paused;
+}
+
+/* MOBILE IMPROVEMENTS */
+@media (max-width: 768px) {
+
+    /* Make the logo scale down */
+    .nav-container img {
+        width: 220px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* Remove the | separators on mobile */
+    .nav-links li {
+        width: 100%;
+    }
+
+    /* Smaller hero text */
+    .hero h1,
+    .services-hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p,
+    .services-hero p {
+        font-size: 1rem;
+    }
+
+    /* Better spacing */
+    .features,
+    .benefits,
+    .why-choose-us,
+    .about-section,
+    .contact-container {
+        margin: 40px auto;
+    }
+
+    /* About page image */
+    .about-image {
+        float: none !important;
+        display: block;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    /* Fix announcement banner text */
+    .announcement-text {
+        font-size: 14px;
+        animation-duration: 25s;
+    }
+
+    /* Buttons fit on small screens */
+    .btn,
+    .btn-large {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* Contact form padding */
+    .contact-container {
+        padding: 25px;
+    }
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav-container img {
+        width: 200px;
+        height: auto;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        padding: 20px;
+        gap: 15px;
+
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        list-style: none;
+    }
+}

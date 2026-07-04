@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cataldo-Turner Web Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,12 +15,15 @@
 
     <header>
         <div class="nav-container">
-            <img src="loog.png" alt="logo" width="50px">
+            <a href="index.html"><img src="logo.png" alt="logo" width="50%"></a>
+
+            <button class="hamburger" id="hamburger">☰</button>
+
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="active">Home</a></li> | 
+                <li><a href="about.html">About</a></li> | 
+                <li><a href="services.html">Services</a></li> | 
+                <li><a href="contact.html">Contact</a></li> | 
                 <li><a href="merchandise.html">Merchandise</a></li>
             </ul>
         </div>
@@ -27,11 +31,16 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Order Your Custom Website Today</h1>
-            <p>Welcome to your new website homepage. Clean, modern, responsive, and ready for your unique content.</p>
+            <h1>Ready to start your website?</h1>
             <a href="services.html" class="btn">Get Started</a>
         </div>
     </section>
+
+    <div class="announcement-banner">
+    <div class="announcement-text">
+        You're not charged until you're fully satisfied with your website! • Professional websites for local businesses • Contact us today!
+    </div>
+</div>
 
     <section class="features">
         <div class="features-grid">
@@ -50,9 +59,14 @@
         </div>
     </section>
 
+        <div class="contactUs">
+            <a href="contact.html" class="btn">Give us a call</a>
+        </div>
+
     <footer>
-        <p>&copy; 2026 Cataldo-Turner Web Solutions. All rights reserved.</p>
+        <p>Contact Us: 435-660-8173 | <a href="mailto:cataldo.turner.websolutions@gmail.com">Email Us</a></p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
