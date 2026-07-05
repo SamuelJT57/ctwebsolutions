@@ -80,3 +80,30 @@ if (hamburger && navLinks) {
             navLinks.classList.contains("active") ? "✕" : "☰";
     });
 }
+
+const chatButton = document.getElementById("chatButton");
+const chatWindow = document.getElementById("chatWindow");
+const closeChat = document.getElementById("closeChat");
+
+chatButton.addEventListener("click", () => {
+    chatWindow.classList.toggle("hidden");
+});
+
+closeChat.addEventListener("click", () => {
+    chatWindow.classList.add("hidden");
+});
+
+document.getElementById("sendMessage").addEventListener("click", () => {
+    const input = document.getElementById("chatInput");
+    const body = document.querySelector(".chat-body");
+
+    if (input.value.trim() === "") return;
+
+    const message = document.createElement("p");
+    message.innerHTML = "<strong>You:</strong> " + input.value;
+
+    body.appendChild(message);
+    body.scrollTop = body.scrollHeight;
+
+    input.value = "";
+});
