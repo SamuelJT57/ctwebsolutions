@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Cataldo-Turner Web Solutions</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html"><img src="logo.png" alt="logo" width="50%"></a>
+
+            <button class="hamburger" id="hamburger">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li> | 
+                <li><a href="about.html">About</a></li> | 
+                <li><a href="services.html">Services</a></li> | 
+                <li><a href="contact.html">Contact</a></li> | 
+                <li><a href="merchandise.html">Merchandise</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <header class="page-header">
+        <h1>Frequently Asked Questions</h1>
+        <p>Questions about our web development services can be found here.</p>
+    </header>
+
+    <main class="faq-container">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How much does a website cost?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Pricing depends on the size and features of your website. We offer affordable packages and features for small businesses and provide free quotes before any work begins. Princing starts at $500 for a basic website compared to most companies offering $1000-$1500, and about $10 per year in domain name upkeep.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How long does it take to build a website?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Most websites are completed within 1-3 weeks, depending on the complexity of the project and how quickly content is provided. We will contact you during the process to ensure your website is built to your specifications.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do I need to have my own domain name?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Nope! We can help you purchase, set up, and manage a domain name if you don't already have one. Alternitavely, we build our websites through GitHub pages for prototyping, so the domain name will be through GitHub by default.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Can you redesign my existing website?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Absolutely. We can refresh your current website with a modern design, improved performance, and mobile-friendly features.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Will my website work on phones and tablets?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Yes, every website we build is fully responsive and optimized for desktops, tablets, and smartphones.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you offer website maintenance?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Yes. We offer maintenance plans that include updates and ongoing support.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Can I update my website myself?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Definitely. We can build your site so that you can easily make changes, or we can handle updates for you if preferred.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Contact Us: 435-660-8173 | <a href="mailto:cataldo.turner.websolutions@gmail.com">Email Us</a></p> 
+        <a href="faq.html">FAQ</a>
+        <p>1568 S 740 W, Payson, UT 84651</p>
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('span');
+
+                answer.classList.toggle('active');
+                icon.textContent = answer.classList.contains('active') ? '−' : '+';
+            });
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
