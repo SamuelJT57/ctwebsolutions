@@ -167,6 +167,31 @@
             margin-top: 80px;
         }
 
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #e78c3c;
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .social-btn:hover {
+            background: #ca6a0a;
+            transform: translateY(-2px);
+        }
+
         /* Services Page */
         .services-hero {
             padding: 120px 20px;
@@ -487,35 +512,6 @@
 
         .contact-container button:hover {
             background-color: #ff823e;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 32px;
-            }
-            .services-hero h1 {
-                font-size: 36px;
-            }
-            .nav-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-            .intro-container {
-                padding: 30px 20px;
-            }
-            .package-card.featured {
-                transform: scale(1);
-            }
-            .package-card.featured:hover {
-                transform: translateY(-5px);
-            }
-            .cta-section {
-                padding: 50px 20px;
-            }
-            .cta-section h2 {
-                font-size: 28px;
-            }
         }
 
 img.about-image {
@@ -881,4 +877,42 @@ a.active {
     color: white;
     padding: 12px 16px;
     cursor: pointer;
+}
+
+#navToggle {
+    display: none;
+}
+
+#navToggle ~ label {
+    cursor: pointer;
+    font-size: xx-large;
+    transform: translateY(-35%);
+}
+
+#navToggle ~ ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+
+#navToggle ~ ul a {
+    background-color: #333333;
+    padding: 16px;
+}
+
+#navToggle ~ ul a:hover {
+    background-color: #555555;
+}
+
+#navToggle:checked ~ ul {
+    max-height: 350px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
 }

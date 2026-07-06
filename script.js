@@ -47,30 +47,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const toggleButton = document.getElementById("theme-toggle");
 
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-    toggleButton.textContent = "☀️ Light Mode";
-}
-
-// Toggle theme
-toggleButton.addEventListener("click", () => {
-
-    document.body.classList.toggle("dark-mode");
-
-    // Save preference
-    if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
+if (toggleButton) {
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
         toggleButton.textContent = "☀️ Light Mode";
-    } else {
-        localStorage.setItem("theme", "light");
-        toggleButton.textContent = "🌙 Dark Mode";
     }
 
-});
+    // Toggle theme
+    toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        // Save preference
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            toggleButton.textContent = "☀️ Light Mode";
+        } else {
+            localStorage.setItem("theme", "light");
+            toggleButton.textContent = "🌙 Dark Mode";
+        }
+    });
+}
 
 const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
+const navLinks = document.querySelector(".nav-links");
 
 if (hamburger && navLinks) {
     hamburger.addEventListener("click", () => {
