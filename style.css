@@ -42,6 +42,11 @@
             padding: 8px;
         }
 
+        .nav-links li:not(:last-child)::after {
+            content:"|";
+            margin-left:15px;
+}
+
         .logo {
             font-size: 24px;
             font-weight: bold;
